@@ -39,3 +39,4 @@ for(let i = 0 ;i<= interval.length-1;i++)
         }
 }
 console.log(result);
+// 
