@@ -1,0 +1,34 @@
+#Primitive Data Types
+String
+Number
+Boolean
+Null
+Undefined
+Symbol
+BigInt
+
+#Composite Data Types (Objects)
+Object
+Array
+Function
+Date
+RegExp
+Map
+WeakMap
+Set: it is build in dataStrutur in js it can allow to store-unique-vlaue of any data type does not metter string,array,object it will sort every thing.
+WeakSet
+ArrayBuffer
+TypedArray (e.g., Int8Array, Uint8Array, etc.)
+DataView
+Promise
+Proxy
+Error
+
+
+#JavaScript, composite data types (objects) are complex structures that can hold multiple values and are based on the Object type.
+
+
+
+# need to understand 
+1. spreat and rest operater 
+2. reduse method
