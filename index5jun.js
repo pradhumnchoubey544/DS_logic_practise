@@ -187,4 +187,42 @@
 
 
 
-// # 
+
+// # Write a function to remove duplicate elements from an array.
+// let arr = [1,2,3,4,1,2,4,6,7];
+// let newarr=[];
+// for(let i =0;i<= arr.length-1;i++)
+//     {
+//     if(!newarr.includes(arr[i]))
+//     {
+//         newarr.push(arr[i])
+//     }
+//     }
+//     console.log(newarr);
+
+
+//# Write a function that checks whether two strings are anagrams or not?
+//anagrams mean same-number-of-cher presnet in both string .
+let str1 = "aabbcref"; 
+let str2 = "afercbab"
+
+let map = new Map();
+
+for(let i = 0;i<=str1.length-1 ;i++)
+{
+    if(map.has(str1.charAt(i)))
+    {
+          map.set(str1.charAt(i),map.get(str1.charAt(i))+1)
+    }else{
+          map.set(str1.charAt(i),1);
+    }
+}
+for(let i = 0;i<=str1.length-1 ;i++)
+    {
+        if(map.has(str1.charAt(i)))
+        {
+              map.set(str1.charAt(i),map.get(str1.charAt(i))-1)
+        }else{
+              map.set(str1.charAt(i),1);
+        }
+    }

@@ -26,7 +26,7 @@ Error
 
 
 #JavaScript, composite data types (objects) are complex structures that can hold multiple values and are based on the Object type.
-
+#You're trying to access the character of a string using array notation, but that's not correct. Strings don't support array-like indexing directly. You should use charAt or just treat the string as an array of characters.
 
 
 # need to understand 
