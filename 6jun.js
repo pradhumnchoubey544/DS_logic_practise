@@ -112,6 +112,7 @@
 // console.log(arr.sort());
 
 
+
 // # how to find average value of given array
 // arr = [1,3,5,2,5,6,8,4];
 // let totelsun = arr.reduce((acu,ele)=>{return acu+ele },0)
@@ -119,3 +120,38 @@
 // console.log(average); // 4.25 is average value of this array
 
 
+
+
+// # How to check if an array contains any element of another array?
+// let anotherarray = ["are" , "you" , "my" , "friend"];
+// let array = ["you" , "are" , "rohon"];
+// // hear we have to find how many value from array is present in anotherarray
+// let map = new Map;
+// for(let i = 0 ;i<=array.length-1;i++)
+// {
+//     map.set(array[i],1);
+// }
+// for(let i = 0 ;i<=anotherarray.length-1;i++)
+// {
+//        if( map.has(anotherarray[i]) )
+//         {
+//             console.log(anotherarray[i]);
+//         }
+// }
+    
+
+
+
+//# How can you extract a few fields from the given JSON object and form a new array?
+// let input = {
+//     "students":[
+//         {name:"rohon",id:10},
+//         {name:"sohon",id:20},
+//         {name:"mohon",id:30}, 
+//         {name:"kohon",id:40}
+//     ]
+// } 
+// const op = input.students.map(function(item){
+//     return item.name;
+// })
+// console.log(op);
