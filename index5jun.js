@@ -203,26 +203,30 @@
 
 //# Write a function that checks whether two strings are anagrams or not?
 //anagrams mean same-number-of-cher presnet in both string .
-let str1 = "aabbcref"; 
-let str2 = "afercbab"
+// let str1 = "aabbcrefg"; 
+// let str2 = "afercbab"
 
-let map = new Map();
+// let map = new Map();
 
-for(let i = 0;i<=str1.length-1 ;i++)
-{
-    if(map.has(str1.charAt(i)))
-    {
-          map.set(str1.charAt(i),map.get(str1.charAt(i))+1)
-    }else{
-          map.set(str1.charAt(i),1);
-    }
-}
-for(let i = 0;i<=str1.length-1 ;i++)
-    {
-        if(map.has(str1.charAt(i)))
-        {
-              map.set(str1.charAt(i),map.get(str1.charAt(i))-1)
-        }else{
-              map.set(str1.charAt(i),1);
-        }
-    }
+// for(let i = 0;i<=str1.length-1 ;i++)
+// {
+//     if(map.has(str1.charAt(i)))
+//     {
+//           map.set(str1.charAt(i),map.get(str1.charAt(i))+1)
+//     }else{
+//           map.set(str1.charAt(i),1);
+//     }
+// }
+// for(let i = 0;i<=str2.length-1 ;i++)
+//     {
+//        if(map.get(str2.charAt(i)) > 1)
+//        {
+//           map.set(str2.charAt(i),map.get(str2.charAt(i))-1);
+//        }else if(map.get(str2.charAt(i)) == 1)
+//             {
+//                   map.delete(str2.charAt(i))
+//             }
+//     }
+// if(map.size !== 0)  // hear we put !== so we have to write nagative statment "it is not anagram";
+//      console.log("it is not anagram")
+// else console.log("it is anagram")
