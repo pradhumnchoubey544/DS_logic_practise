@@ -32,6 +32,11 @@ Error
 
 
 
+diff indexOf(ele) & lastIndexOf(ele)
+indexOf(ele) returns the first index at which a given element can be found.
+lastIndexOf(ele) returns the last index at which a given element can be found
+
+
 
 
 
