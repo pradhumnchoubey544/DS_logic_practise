@@ -172,3 +172,23 @@ console.log(op); // hear it display all name in array from beocue map will retur
 // const deleteIndex = 4;
 // const newarr = [...arr.slice(0,deleteIndex),...arr.slice(deleteIndex+1)];
 // console.log(newarr);
+
+
+
+//# How can you delete a specific element?
+// let arr = [1,2,3,4,6,7];
+// const elemant = 4;
+// const newarr = arr.filter((ele)=>{ return ele !== elemant})
+// console.log(newarr);
+
+
+// #How do you clone an Object?
+//there is two ways 1)object.assign   or 2)spread operater
+// let object = {"name":"rohon",
+//               "age" :30,
+//               "add":"mumbai"
+//              };
+//  let firstway = Object.assign({},object);
+//  let secondway  = {...object};
+//  console.log(firstway);
+//  console.log(secondway);
