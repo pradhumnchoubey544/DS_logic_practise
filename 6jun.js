@@ -155,3 +155,22 @@
 //     return item.name;
 // })
 // console.log(op);
+
+
+
+// let newJson = {"object":{
+//                          name:"rohon",
+//                          age:12
+//                         },
+//             "students":[
+    //                     {name:"rohon",id:10},
+    //                     {name:"sohon",id:20},
+    //                     {name:"mohon",id:30}, 
+    //                     {name:"kohon",id:40}
+    //                    ]
+//               };
+//console.log(JSON.parse(newJson));
+
+let newJson = { "object": { "name": "rohon", "age": 12 } };
+let jsonString = JSON.stringify(newJson);
+console.log(jsonString); 

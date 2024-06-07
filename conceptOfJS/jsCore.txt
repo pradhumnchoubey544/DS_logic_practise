@@ -43,3 +43,15 @@ lastIndexOf(ele) returns the last index at which a given element can be found
 # need to understand 
 1. spreat and rest operater 
 2. reduse method
+3. json type 
+   json have 1) key vlaue pair data 
+             2) use "key" to repup key  
+             3) use this  :  to not data  
+             4) by usig "paece" we can convert jsont ot object
+
+
+
+             
+4. where to use map()
+
+ 
