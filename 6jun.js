@@ -163,14 +163,15 @@
 //                          age:12
 //                         },
 //             "students":[
-    //                     {name:"rohon",id:10},
-    //                     {name:"sohon",id:20},
-    //                     {name:"mohon",id:30}, 
-    //                     {name:"kohon",id:40}
-    //                    ]
+//                         {name:"rohon",id:10},
+//                         {name:"sohon",id:20},
+//                         {name:"mohon",id:30}, 
+//                         {name:"kohon",id:40}
+//                        ]
 //               };
-//console.log(JSON.parse(newJson));
 
-let newJson = { "object": { "name": "rohon", "age": 12 } };
-let jsonString = JSON.stringify(newJson);
-console.log(jsonString); 
+// console.log(typeof(newJson)); // typr is (object) if we try to convert into  
+
+// let newJson = { "object": { "name": "rohon", "age": 12 } };
+// let jsonString = JSON.stringify(newJson);
+// console.log(jsonString); 
