@@ -2,7 +2,10 @@
 
 
 
-const url = 'https://dummy.restapiexample.com/api/v1/employees';
-const data = fetch(url);
-console.log(data);
-setTimeout(()=>{console.log(data)},5000);
+// const url = 'https://dummy.restapiexample.com/api/v1/employees';
+// const data = fetch(url);
+// console.log(data);
+// setTimeout(()=>{console.log(data)},5000);
+console.log("ok server");
+
+
