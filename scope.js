@@ -21,7 +21,7 @@
 //Case 2:- in this case we pass props "b" by outer("hello"); so inner function will print it becouse for inner veriable "b" is also lexical veriable becouse "b" is veriable of "outer()" function like closer
 // function outer(b)
 // {
-     
+
 //      function inner()
 //      {
 //         console.log(a,b);  
@@ -33,20 +33,21 @@
 // res();  // 10 hello
 
 
- 
+
 
 //Case 3:- nested function then what happend to closers 
-function upper(){
-function outer(b)
-{
-     
-     function inner()
-     {
-        console.log(a,b);  
-     }
-     var a = 40;     
-     return inner;
+function upper() {
+    function Outer() {
+
+        function inner() {
+            console.log(a, b);
+        }
+        var a = 40;
+        return inner;
+
+    }
+    return Outer;
 }
-}
-var res = outer("hello"); 
-res();  // 10 hello
+var resupper = upper();
+var resinner = resupper();
+var resinner // 10 hello
