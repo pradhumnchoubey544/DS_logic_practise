@@ -68,8 +68,8 @@ console.log("VALUE", value);
 
 
 const maxage = arr2.reduce((acc, ele) => {
-    if (acc < ele.age) {  console.log("***",acc,ele.age);return ele.age }  /// it will iterat for all array element but when condition satisfy it return from in-between only,other-wise it stop execution for each iteration before last return and at last it reurn (last-return)
-    console.log("---",acc,ele.age);
+    if (acc < ele.age) { console.log("***", acc, ele.age); return ele.age }  /// it will iterat for all array element but when condition satisfy it return from in-between only,other-wise it stop execution for each iteration before last return and at last it reurn (last-return)
+    console.log("---", acc, ele.age);
     return acc;
 }, 0)
 console.log(maxage);
@@ -77,11 +77,11 @@ console.log(maxage);
 
 
 
-const arrayString = ["red","blue","green","red","blue","green","red"];
-let objOccerance = arrayString.reduce((newobj,ele)=>{
-       if(newobj[ele]){ newobj[ele]++ }else newobj[ele]= 1;
-       return newobj;
-},{})
+const arrayString = ["red", "blue", "green", "red", "blue", "green", "red"];
+let objOccerance = arrayString.reduce((newobj, ele) => {
+    if (newobj[ele]) { newobj[ele]++ } else newobj[ele] = 1;
+    return newobj;
+}, {})
 console.log(objOccerance);
 
 
@@ -90,13 +90,12 @@ console.log(objOccerance);
 
 
 // case: find remaing vlaue 
-let arr12 = [10,2,5]; 
-let count = 10;  
-let remainArr =[];
-for(let i = 1;i<count;i++)
-    { 
-         if(!arr12.includes(i)){remainArr.push(i)}
-    }
+let arr12 = [10, 2, 5];
+let count = 10;
+let remainArr = [];
+for (let i = 1; i < count; i++) {
+    if (!arr12.includes(i)) { remainArr.push(i) }
+}
 console.log(remainArr);
 
 
@@ -104,11 +103,11 @@ console.log(remainArr);
 
 //case: remove _ by space and capalise the letter after the _
 let string = "uv_ram_shyam_jay"
-const capitalizedWords = string.split("_").map((word ,index)=> {
-  if(index === 0)return word;
-  const firstChar = word.charAt(0).toUpperCase();
-  const remaining = word.slice(1);
-  return firstChar + remaining;
+const capitalizedWords = string.split("_").map((word, index) => {
+    if (index === 0) return word;
+    const firstChar = word.charAt(0).toUpperCase();
+    const remaining = word.slice(1);
+    return firstChar + remaining;
 });
 const newstring = capitalizedWords.join(" ");
 console.log(newstring);
@@ -117,12 +116,51 @@ console.log(newstring);
 
 
 // do viceversa convert "uv Ram Shyam Jay" to "uv_ram_shyam_jay"
-const vistirng = newstring.split(" ").map((ele,index)=>{
-    if(index === 0) return ele;
+const vistirng = newstring.split(" ").map((ele, index) => {
+    if (index === 0) return ele;
     let lowercase = ele.charAt(0).toLowerCase();
     let remaining = ele.slice(1);
-   return lowercase + remaining;
+    return lowercase + remaining;
 })
 let viNewString = vistirng.join("_");
 console.log(viNewString);
 
+
+
+
+
+// occerance of boy and girl
+let boy = 0;
+let students = [
+    { name: "rohon", "gender": "girl" },
+    { name: "mohon", "gender": "boy" },
+    { name: "sohon", "gender": "boy" },
+    { name: "gohon", "gender": "boy" }
+]
+for (let i = 0; i < students.length; i++) {
+    if (students[i].gender == "boy") {
+        boy++;
+    }
+}
+console.log(boy);
+// or by reduce method 
+let reduceboy = students.reduce((acc, itt) => { if (itt.gender == "boy") acc++; return acc }, 0);
+console.log("boys", reduceboy);
+
+
+
+// # sort the array of object based on age
+let SortObj = [
+    { name: "rohon", "gender": "girl", age: 32 },
+    { name: "mohon", "gender": "boy", age: 42 },
+    { name: "sohon", "gender": "boy", age: 88 },
+    { name: "gohon", "gender": "boy", age: 11 }
+]
+
+let SortNewObj = SortObj.map((ele)=>{
+    return ele.age;
+})
+console.log(SortNewObj);
+
+
+//console.log(SortObj.Sort());
