@@ -84,3 +84,45 @@ let objOccerance = arrayString.reduce((newobj,ele)=>{
 },{})
 console.log(objOccerance);
 
+
+
+
+
+
+// case: find remaing vlaue 
+let arr12 = [10,2,5]; 
+let count = 10;  
+let remainArr =[];
+for(let i = 1;i<count;i++)
+    { 
+         if(!arr12.includes(i)){remainArr.push(i)}
+    }
+console.log(remainArr);
+
+
+
+
+//case: remove _ by space and capalise the letter after the _
+let string = "uv_ram_shyam_jay"
+const capitalizedWords = string.split("_").map((word ,index)=> {
+  if(index === 0)return word;
+  const firstChar = word.charAt(0).toUpperCase();
+  const remaining = word.slice(1);
+  return firstChar + remaining;
+});
+const newstring = capitalizedWords.join(" ");
+console.log(newstring);
+
+
+
+
+// do viceversa convert "uv Ram Shyam Jay" to "uv_ram_shyam_jay"
+const vistirng = newstring.split(" ").map((ele,index)=>{
+    if(index === 0) return ele;
+    let lowercase = ele.charAt(0).toLowerCase();
+    let remaining = ele.slice(1);
+   return lowercase + remaining;
+})
+let viNewString = vistirng.join("_");
+console.log(viNewString);
+
