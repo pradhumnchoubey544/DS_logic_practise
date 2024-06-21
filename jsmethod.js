@@ -164,3 +164,33 @@ console.log(SortNewObj);
 
 
 //console.log(SortObj.Sort());
+
+
+
+
+
+
+// slice and splice  method in js 
+// slice: Extracts a portion of the array, leaving the original array untouched (think copy).
+// splice: Modifies the original array by removing/replacing elements (think edit).
+
+//slice
+let array = [11,44,22,66,44,33,66];
+let slicearray = array.slice(0,3); // hear he take out slice arr[0,1,2] it take one less then give last value like hear (3-1 =2) it give vlaue till 2 index 
+let slicearray2 = array.slice(3) // if you give single vlaue it cut that many vlaue from starting 
+console.log(slicearray); //[ 11, 44, 22 ]
+console.log(slicearray2);//[ 66, 44, 33, 66 ]
+console.log(array);// slice will not change in orignal array 
+
+//splice
+let arrSplice = array.splice(1,3,"hi"); // splice(starting-index,number of values remove from starting,what ever come after secod values it insert at the place of removed value area);
+console.log(arrSplice); // [ 44, 22, 66 ] it retrun all values it take out 
+console.log(array);// [ 11, 'hi', 44, 33, 66 ]  splice can change in orignal array 
+
+
+let array1 = [11,44,22,66,44,33,66];
+array1.splice(2,5,'hi','by','ni','er');
+console.log(array1);// [ 11, 44, 'hi', 'by', 'ni', 'er' ]
+
+
+
