@@ -43,6 +43,17 @@ while(a){
 	console.log('Hello')
 }
 
+//----------------------------
+function getName1(){
+	console.log(this.name);
+}
 
+Object.prototype.getName2 = () =>{console.log(this.name)}
 
+let personObj = {
+	name:"Tony",
+	print:getName1
+}
+personObj.print();
+personObj.getName2();
 
